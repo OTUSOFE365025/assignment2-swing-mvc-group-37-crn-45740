@@ -35,10 +35,10 @@ public class Scanner {
 		  scannerPanel.add(scanButton);
 		  frame.getContentPane().add(scannerPanel);
 		  
-		  scanButton.addActionListener(this::generateUPC);
+		  scanButton.addActionListener(e -> cashRegister.scanItem(this.generateUPC()));
 	 }
 
-	private int generateUPC(ActionEvent e) {
+	private int generateUPC() {
          Random r = new Random();
          List<Integer> validUpcs = cashRegister.getValidUpcs();
          int index = r.nextInt(validUpcs.size());

@@ -10,6 +10,8 @@ public class CashRegister {
     // Helper list for generating a random UPC from valid UPCs
     private final List<Integer> validUpcs = new ArrayList<>();
 
+    double subtotal = 0;
+
     public CashRegister(File inputFile) {
         try (FileReader reader = new FileReader(inputFile)) {
             BufferedReader bf = new BufferedReader(reader);
@@ -41,7 +43,10 @@ public class CashRegister {
             return;
         }
 
-        System.out.println("Scanned item with UPC " + upc);
+        subtotal += scannedItem.getPrice();
+
+        System.out.println(scannedItem.getName() + ": $" + scannedItem.getPrice());
+        System.out.println("Subtotal: " + subtotal);
         scannedItems.add(scannedItem);
     }
 
