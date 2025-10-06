@@ -6,11 +6,11 @@
 This is the project home for Group 37's submission for Assignment 2 in the SOFE3650 F25 course.
 
 ## Work Distribution
-| Student ID | Name | Completed Work                                                  |
-|:----------:| ---- |-----------------------------------------------------------------|
-| 100862425  | Lily Redpath | <ul><li>Swing MVC Explanation</li><li>CashRegisterMVC</li></ul> |
-| 100924543  | Jonathan Leaper | PLEASE FILL IN                                                  |
-| 100922080  | Vlad Stetca | PLEASE FILL IN                                                  |
+| Student ID | Name | Completed Work                          |
+|:----------:| ---- |-----------------------------------------|
+| 100862425  | Lily Redpath | <ul><li>Swing MVC Explanation</li></ul> |
+| 100924543  | Jonathan Leaper | PLEASE FILL IN                          |
+| 100922080  | Vlad Stetca | PLEASE FILL IN                          |
 
 ## Repository Layout
 The repository layout is set up as the following:
