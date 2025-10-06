@@ -12,6 +12,20 @@ This is the project home for Group 37's submission for Assignment 2 in the SOFE3
 | 100924543  | Jonathan Leaper | PLEASE FILL IN                                                  |
 | 100922080  | Vlad Stetca | PLEASE FILL IN                                                  |
 
+## Repository Layout
+The repository layout is set up as the following:
+```text
+Key:
+<file/directory name> <(D)irectory/(F)ile> -> <description>
+-------------------------------------------------------------
+.github             -> GitHub configuration files
+.idea (D)           -> IntelliJ Idea configuration folder
+docs (D)            -> All raw documentation files required
+CashRegisterMVC (D) -> All Java source files created for part 3 of the assignment
+SwingMVC (D)        -> All Java source files provided for the Swing MVC example.
+README.md (F)       -> The file you're currently reading!
+```
+
 ## Swing Explanation
 
 ## Swing MVC Explanation
