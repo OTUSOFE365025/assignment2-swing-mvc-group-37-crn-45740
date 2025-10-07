@@ -15,8 +15,6 @@ public class CashRegisterModel {
     public CashRegisterModel(File inputFile) {
         try (FileReader reader = new FileReader(inputFile)) {
             BufferedReader bf = new BufferedReader(reader);
-            // Empty out the first line as it defines the format of the file
-            bf.readLine();
 
             String productInfo;
             while ((productInfo = bf.readLine()) != null) {
