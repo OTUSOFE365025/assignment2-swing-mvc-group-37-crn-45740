@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class CashRegister {
+public class CashRegisterModel {
     private final HashMap<Integer, Item> registeredItems = new HashMap<>();
     private final List<Item> scannedItems = new ArrayList<>();
 
@@ -12,7 +12,7 @@ public class CashRegister {
 
     double subtotal = 0;
 
-    public CashRegister(File inputFile) {
+    public CashRegisterModel(File inputFile) {
         try (FileReader reader = new FileReader(inputFile)) {
             BufferedReader bf = new BufferedReader(reader);
             // Empty out the first line as it defines the format of the file
@@ -37,7 +37,7 @@ public class CashRegister {
     }
 
     public void scanItem(int upc) {
-        Item scannedItem = registeredItems.get(upc);
+        Item scannedItem = this.getItem(upc);
         if (scannedItem == null) {
             System.out.println("Invalid UPC!");
             return;
@@ -45,9 +45,15 @@ public class CashRegister {
 
         subtotal += scannedItem.getPrice();
 
-        System.out.println(scannedItem.getName() + ": $" + scannedItem.getPrice());
-        System.out.println("Subtotal: " + subtotal);
         scannedItems.add(scannedItem);
+    }
+
+    public double getSubtotal(){
+        return subtotal;
+    }
+
+    public Item getItem(Integer UPC){
+        return registeredItems.get(UPC);
     }
 
     public List<Integer> getValidUpcs() {

@@ -3,7 +3,6 @@
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.util.Random;
 
 import java.util.List;
@@ -15,10 +14,12 @@ public class Scanner {
 	 private JPanel scannerPanel;
 	 private JButton scanButton;
 
-     private CashRegister cashRegister;
+     private Controller controller;
+	 private CashRegisterModel cashRegisterModel;
 
-	 public Scanner(CashRegister cashRegister) {
-         this.cashRegister = cashRegister;
+	 public Scanner(Controller controller, CashRegisterModel cashRegisterModel) {
+         this.controller = controller;
+		 this.cashRegisterModel = cashRegisterModel;
 		  frame = new JFrame("Scanner");
 		  frame.getContentPane().setLayout(new BorderLayout());
 		  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -35,12 +36,12 @@ public class Scanner {
 		  scannerPanel.add(scanButton);
 		  frame.getContentPane().add(scannerPanel);
 		  
-		  scanButton.addActionListener(e -> cashRegister.scanItem(this.generateUPC()));
+		  scanButton.addActionListener(e -> controller.scanItem(this.generateUPC()));
 	 }
 
 	private int generateUPC() {
          Random r = new Random();
-         List<Integer> validUpcs = cashRegister.getValidUpcs();
+         List<Integer> validUpcs = cashRegisterModel.getValidUpcs();
          int index = r.nextInt(validUpcs.size());
          return validUpcs.get(index);
 	}
