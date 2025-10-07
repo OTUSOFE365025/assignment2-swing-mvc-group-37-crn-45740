@@ -57,3 +57,6 @@ While in the Swing example provided in this repository under `SwingMVC`, the fol
 ```
 View -> Controller -> Model & View
 ```
+## Sequence Diagram
+The following is a sequence diagram following what happens when the scan button is pressed
+<img src="/assignment2sequencediagram.png"></img>
