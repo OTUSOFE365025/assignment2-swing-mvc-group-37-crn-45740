@@ -10,7 +10,7 @@ This is the project home for Group 37's submission for Assignment 2 in the SOFE3
 |:----------:| ---- |-----------------------------------------|
 | 100862425  | Lily Redpath | <ul><li>Swing MVC Explanation</li></ul> |
 | 100924543  | Jonathan Leaper | <ul><li>Sequence Diagram</li><li>Ensured Project followed MVC architecture</li></ul> |
-| 100922080  | Vlad Stetca |<ul><li>Class Diagram</li>/ul>                        |
+| 100922080  | Vlad Stetca |<ul><li>Class Diagram</li><li>Swing Explanation</li></ul>                        |
 
 ## Repository Layout
 The repository layout is set up as the following:
@@ -27,7 +27,8 @@ README.md (F)       -> The file you're currently reading!
 ```
 
 ## Swing Explanation
-
+In this project, Swing is used to create the graphical user interface (GUI), forming the View in the MVC pattern. The components; JFrame, JPanel, JButton, JtextField and Jlabel display data while the event listeners pass interactions to the Controller which update the Model. When the Model changes the Swing view automatically changes, keeping the interface in sync. Swing makes it easy to seperate the interface from the logic while creating a simple user interface. 
+ 
 ## Swing MVC Explanation
 The normal MVC architecture involves three titular components:
 
