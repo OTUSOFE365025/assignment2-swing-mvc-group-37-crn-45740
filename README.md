@@ -9,7 +9,7 @@ This is the project home for Group 37's submission for Assignment 2 in the SOFE3
 | Student ID | Name | Completed Work                          |
 |:----------:| ---- |-----------------------------------------|
 | 100862425  | Lily Redpath | <ul><li>Swing MVC Explanation</li></ul> |
-| 100924543  | Jonathan Leaper | PLEASE FILL IN                          |
+| 100924543  | Jonathan Leaper | <ul><li>Sequence Diagram</li><li>Ensured Project followed MVC architecture</li></ul> |
 | 100922080  | Vlad Stetca | PLEASE FILL IN                          |
 
 ## Repository Layout
