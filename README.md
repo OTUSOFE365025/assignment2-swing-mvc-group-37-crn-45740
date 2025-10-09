@@ -62,5 +62,5 @@ View -> Controller -> Model & View
 The following is a sequence diagram following what happens when the scan button is pressed
 <img src="/assignment2sequencediagram.png"></img>
 ## Class Diagram
-
+<img width="991" height="534" alt="download" src="https://github.com/user-attachments/assets/e075a92c-187e-478d-90ff-81614531a898" />
 
